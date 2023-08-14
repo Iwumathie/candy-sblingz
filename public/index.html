@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="application/json" href="glide.core.min.css" />
+    <!-- <link rel="stylesheet"  type="application/json" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"> -->
+    <title>Document</title>
+  </head>
+  <body class="w-full bg-[url('/public/assets/newimg.jpg')]">
+    <div
+      class="py-3 flex justify-between px-4 items-center relative bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+    >
+      <div
+        class="brand text-[13px] text-yellow-black bg-purple-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-950 duration-300 shadow-lg shadow-black hover:border-yellow-200 hover:text-white items-center text-center rounded-[50%] p-5"
+      >
+        <a href=""
+          ><h1 class="text-1x2">
+            <span class="flex justify-center">Candy's</span>
+            Bling-n-Thingz
+          </h1></a
+        >
+      </div>
+
+      <div class="nav hidden md:flex gap-3 items-center">
+        <li
+         
+          class="list-none text-yellow-200 hover:bg-violet-950 hover:text-white py-[0.6rem] px-4 rounded-[14px]"
+        >
+          <a class="text-[18px]" href="" aria-current="page"></a>Home
+        </li>
+        <li
+          class="list-none text-yellow-200 hover:bg-violet-950 hover:text-white py-[0.6rem] px-4 rounded-[14px]"
+        >
+          <a class="text-[18px]" href=""></a>Contact
+        </li>
+        <li
+          class="list-none text-yellow-200 hover:bg-violet-950 hover:text-white py-[0.6rem] px-4 rounded-[14px]"
+        >
+          <a class="text-[18px]" href=""></a>Order
+        </li>
+      </div>
+
+      <!-- Mobile Navbar -->
+      <div 
+        class="nav block flex-col md:hidden gap-y-4 items-center w-full relative p-5 m-3 "
+      >  <div class="harmburger flex text-4xl right-0 mg">
+        <ion-icon name="reorder-three-outline"></ion-icon>
+      </div>
+      
+        <div class=" w-[70%] rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 nav-bar text-center absolute p-5 top-28 p10 right-0">
+          <li
+            class="list-none text-yellow-200 hover:bg-violet-950 hover:text-white py-[0.6rem] px-4 rounded-[14px] my-3"
+          >
+            <a class="text-[18px]" href="" aria-current="page"></a>Home
+          </li>
+          <li
+            class="list-none text-yellow-200 hover:bg-violet-950 hover:text-white py-[0.6rem] px-4 rounded-[14px] my-3"
+          >
+            <a class="text-[18px]" href=""></a>Contact
+          </li>
+          <li
+            class="list-none text-yellow-200 hover:bg-violet-950 hover:text-white py-[0.6rem] px-4 rounded-[14px] my-3"
+          >
+            <a class="text-[18px]" href=""></a>Order
+          </li>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="container mt-20 md:w-[800px] w-[90px]  h-[200px] md:h-[400px] mx-auto flex items-center  flex-col rounded-md justify-center  "
+    >
+     <img slide class="w-full h-full rounded-md" src="" alt="">
+      </div>
+    </div>
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
