@@ -678,6 +678,14 @@ video {
   width: 0px;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
 .flex-none {
   flex: none;
 }
