@@ -14,19 +14,16 @@
       class="py-3 flex justify-between px-4 items-center relative bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
     >
       <div
-        class="brand text-[13px] text-yellow-black bg-purple-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-950 duration-300 shadow-lg shadow-black hover:border-yellow-200 hover:text-white items-center text-center rounded-[50%] p-5"
+        class="brand text-[13px] md:relative md:flex text-yellow-black bg-purple-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-950 duration-300 shadow-lg shadow-violet-200 hover:border-yellow-200 hover:text-white items-center text-center rounded-[50%] p-3 md:p-5 px-5 md:px-5"
       >
-        <a href=""
-          ><h1 class="text-1x2">
-            <span class="flex justify-center">Candy's</span>
-            Bling-n-Thingz
-          </h1></a
-        >
+        <a class="flex flex-col" href=""
+          ><h1 class="text-2xl text-pink-500 hover:text-white">Candy's</h1>
+          <h1 class="w-[100px] md:w-full">Bling-n-Thingz</h1>
+        </a>
       </div>
 
       <div class="nav hidden md:flex gap-3 items-center">
         <li
-         
           class="list-none text-yellow-200 hover:bg-violet-950 hover:text-white py-[0.6rem] px-4 rounded-[14px]"
         >
           <a class="text-[18px]" href="" aria-current="page"></a>Home
@@ -44,11 +41,17 @@
       </div>
 
       <!-- Mobile Navbar -->
-      <div 
-        class="nav block flex-col md:hidden gap-y-4 items-center w-full relative p-5 m-3 "
-      >  <ion-icon class="hamburger flex text-4xl ml-[95%] hover:bg-violet-900 hover:text-white" name="reorder-three-outline"></ion-icon>
-      
-        <div class=" w-[70%] rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 nav-bar text-center absolute p-5 top-28 p10 right-0">
+      <div
+        class="nav block flex-col md:hidden gap-y-4 items-center w-full relative p-5 m-3"
+      >
+        <ion-icon
+          class="hamburger flex text-4xl ml-[95%] hover:bg-violet-900 hover:text-white"
+          name="reorder-three-outline"
+        ></ion-icon>
+
+        <div
+          class="w-[70%] rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 nav-bar text-center absolute p-5 top-28 p10 right-0"
+        >
           <li
             class="list-none text-yellow-200 hover:bg-violet-950 hover:text-white py-[0.6rem] px-4 rounded-[14px] my-3"
           >
@@ -64,21 +67,23 @@
           >
             <a class="text-[18px]" href=""></a>Order
           </li>
-          
         </div>
       </div>
     </div>
     <div
-      class="container mt-20 md:w-[800px] w-[90px]  h-[200px] md:h-[400px] mx-auto flex items-center  flex-col rounded-md justify-center  "
+      class="container mt-20 md:w-[800px] w-[95%] h-[200px] md:h-[400px] mx-auto flex items-center flex-col rounded-md justify-center"
     >
-     <img slide class="w-full h-full rounded-md" src="" alt="">
-      </div>
+      <img slide class="w-full h-full rounded-md" src="" alt="" />
     </div>
 
-    
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script src="index.js"></script>
   </body>
 </html>
