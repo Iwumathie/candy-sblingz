@@ -610,6 +610,90 @@ video {
   margin-top: 5rem;
 }
 
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.mr-96 {
+  margin-right: 24rem;
+}
+
+.ml-96 {
+  margin-left: 24rem;
+}
+
+.ml-9 {
+  margin-left: 2.25rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
+}
+
+.ml-24 {
+  margin-left: 6rem;
+}
+
+.ml-\[100\%\] {
+  margin-left: 100%;
+}
+
+.ml-\[50\%\] {
+  margin-left: 50%;
+}
+
+.ml-\[60\%\] {
+  margin-left: 60%;
+}
+
+.ml-\[70\%\] {
+  margin-left: 70%;
+}
+
+.ml-\[80\%\] {
+  margin-left: 80%;
+}
+
+.ml-\[90\%\] {
+  margin-left: 90%;
+}
+
+.ml-\[99\%\] {
+  margin-left: 99%;
+}
+
+.ml-\[95\%\] {
+  margin-left: 95%;
+}
+
+.ml-\[93\%\] {
+  margin-left: 93%;
+}
+
+.ml-\[92\%\] {
+  margin-left: 92%;
+}
+
+.mr-9 {
+  margin-right: 2.25rem;
+}
+
+.-ml-16 {
+  margin-left: -4rem;
+}
+
+.-mr-16 {
+  margin-right: -4rem;
+}
+
+.mr-16 {
+  margin-right: 4rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -751,6 +835,11 @@ video {
   background-color: rgb(233 213 255 / var(--tw-bg-opacity));
 }
 
+.bg-violet-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 29 149 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/public\/assets\/newimg\.jpg\'\)\] {
   background-image: url('/public/assets/newimg.jpg');
 }
@@ -815,9 +904,31 @@ video {
   line-height: 1;
 }
 
+.text-\[25px\] {
+  font-size: 25px;
+}
+
+.text-\[35px\] {
+  font-size: 35px;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-yellow-200 {
   --tw-text-opacity: 1;
   color: rgb(254 240 138 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -877,6 +988,11 @@ video {
   background-color: rgb(46 16 101 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-violet-900:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 29 149 / var(--tw-bg-opacity));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -901,6 +1017,10 @@ video {
 
   .md\:rounded-\[50\%\] {
     border-radius: 50%;
+  }
+
+  .md\:text-\[30px\] {
+    font-size: 30px;
   }
 }
 
