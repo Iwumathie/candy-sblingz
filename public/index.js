@@ -12,8 +12,11 @@ function changeHere(e){
   if(myTarget.nextElementSibling.classList.contains("hidden")){
     navToggle.classList.remove('hidden')
     slideShow.style.marginTop = "250px"
+<<<<<<< HEAD
     navToggle.classList.add("")
 
+=======
+>>>>>>> 92f63aa ( more active setup)
   }
   else{
     navToggle.classList.add('hidden')

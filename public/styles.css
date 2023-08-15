@@ -718,10 +718,6 @@ video {
   --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
 }
 
-.bg-center {
-  background-position: center;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -782,8 +778,14 @@ video {
   color: rgb(254 240 138 / var(--tw-text-opacity));
 }
 
-.opacity-\[100\%\] {
-  opacity: 100%;
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -851,6 +853,16 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-yellow-200:hover {
+  --tw-text-opacity: 1;
+  color: rgb(254 240 138 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
