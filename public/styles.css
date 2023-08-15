@@ -695,21 +695,12 @@ video {
   background-color: rgb(233 213 255 / var(--tw-bg-opacity));
 }
 
-.bg-violet-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(46 16 101 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\/public\/assets\/newimg\.jpg\'\)\] {
   background-image: url('/public/assets/newimg.jpg');
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\/public\/assets\/newimg\.jpg\'\)center\] {
-  background-image: url('/public/assets/newimg.jpg')center;
 }
 
 .from-indigo-500 {
@@ -791,24 +782,6 @@ video {
   color: rgb(254 240 138 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-green-600 {
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
-}
-
-.opacity-\[1\%\] {
-  opacity: 1%;
-}
-
-.opacity-\[10\%\] {
-  opacity: 10%;
-}
-
 .opacity-\[100\%\] {
   opacity: 100%;
 }
@@ -836,24 +809,12 @@ video {
   transition-delay: 150ms;
 }
 
-.delay-500 {
-  transition-delay: 500ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.ease-in {
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .hover\:-translate-y-1:hover {
