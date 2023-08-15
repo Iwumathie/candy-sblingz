@@ -1,17 +1,14 @@
 
 .active{
-<<<<<<< HEAD
-  background: rgb(124, 212, 156);
-  color: rgba(255, 255, 255, 0.842);
+  background: green;
+  color: white;
+  border: 2px solid white;
+  transition: all;
 }
 
 body{
   background-image: url("./assets/newimg.jpg");
   width: 100%;
   /* background-size: cover; */
-=======
-  background: green;
-  color: white;
-  border: 2px solid violet;
->>>>>>> 92f63aa ( more active setup)
+ 
 }
