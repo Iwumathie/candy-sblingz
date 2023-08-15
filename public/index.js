@@ -1,3 +1,21 @@
+
+const clickIcon = document.querySelector(".hamburger")
+const navToggle = document.querySelector('.nav-bar')
+const slideShow = document.querySelector('.container')
+function changeHere(e){
+  const myTarget = e.target
+  if(myTarget.nextElementSibling.classList.contains("hidden")){
+    navToggle.classList.remove('hidden')
+    slideShow.style.marginTop = "250px"
+  }
+  else{
+    navToggle.classList.add('hidden')
+    slideShow.style.marginTop =""
+  }
+
+}
+
+
 let i = 0
 let image =[]
 let time = 4000
