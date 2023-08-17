@@ -886,6 +886,10 @@ video {
   font-size: 20px;
 }
 
+.text-\[17px\] {
+  font-size: 17px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1070,5 +1074,10 @@ video {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
