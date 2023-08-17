@@ -68,8 +68,52 @@ window.onload = slideImage
 
 
 
+// Products 
+
+const products =[
+  {id:1, name: "Shoe", price:"45", image: "./assets/spice1.jpeg"},
+  {id:2, name: "Toy", price:"105", image: "./assets/beatie.jpg"},
+  {id:3, name: "Earing", price:"20", image: "./assets/spice2.jpeg"},
+  {id:4, name: "Hand bag", price:"30", image: "./assets/beati.jpg"},
+]
 
 
+let cart = []
+
+const displayProducts = ()=>{
+  const productContainer = document.querySelector(".product-list")
+  
+  const classes = ["grid", "w-full", "grid-cols", "md:grid-cols-3", "gap-10", "py-10"]
+
+
+  
+  products.map((product, index)=>{
+    const productDiv = document.createElement("div")
+    productDiv.className = "md:grid,w-full,flex flex-col,md:grid-cols-3,md:gap-10 m-4"
+    console.log(index);
+    productDiv.innerHTML = `
+    <div class="bg-white p-6">
+    <img class="w-[17rem] h-[10rem]" src=${product.image} alt="" />
+    <div class="product-details py-4 gap-3">
+      <h1 class="name text-2xl pb-3">${product.name}</h1>
+      <div class="price-tag flex">
+        <p class="price line-through pr-3">$${product.price}</p>
+        <p class="price">$25</p>
+      </div>
+    </div>
+    <button 
+      class="py-2 px-4 bg-blue-600 outline-none w-full rounded-lg pointer text-white"
+    >
+      Buy now
+    </button>
+  </div>
+    `
+    productContainer.appendChild(productDiv)
+  })
+
+}
+
+displayProducts()
 
 
 
