@@ -39,29 +39,29 @@ link.addEventListener("click", setActiveLink)
 
 
 
-let i = 0
-let image =[]
-let time = 4000
+// let i = 0
+// let image =[]
+// let time = 4000
 
-image[0] = "./assets//spice1.jpeg"
-image[1] = "./assets//spice2.jpeg"
-image[2] = "./assets/spice1.jpeg"
+// image[0] = "./assets//spice1.jpeg"
+// image[1] = "./assets//spice2.jpeg"
+// image[2] = "./assets/spice1.jpeg"
 
 
-function slideImage(){
-  const img = document.querySelector("img")
-  img.src = image[i]
-  if(i < image.length -1){
-    i++
-  }
-  else {
-    i =0
-  }
+// function slideImage(){
+//   const img = document.querySelector("img")
+//   img.src = image[i]
+//   if(i < image.length -1){
+//     i++
+//   }
+//   else {
+//     i =0
+//   }
 
-setTimeout("slideImage()", time)
- }
+// setTimeout("slideImage()", time)
+//  }
 
-window.onload = slideImage
+// window.onload = slideImage
 
 // window.onload = setActiveLink
 
@@ -83,13 +83,13 @@ let cart = []
 const displayProducts = ()=>{
   const productContainer = document.querySelector(".product-list")
   
-  const classes = ["grid", "w-full", "grid-cols", "md:grid-cols-3", "gap-10", "py-10"]
+  const classes = ["grid", "w-full", "grid-cols", "md:grid-cols-3", "gap-10", "py-7"]
 
 
   
   products.map((product, index)=>{
     const productDiv = document.createElement("div")
-    productDiv.className = "md:grid,w-full,flex flex-col,md:grid-cols-3,md:gap-10 m-4"
+    productDiv.className = "md:grid,w-full,flex flex-col, md:grid-cols-3,md:gap-10 m-4"
     console.log(index);
     productDiv.innerHTML = `
     <div class="bg-white p-1">
