@@ -22,8 +22,14 @@
         class="brand text-[13px] md:relative md:flex text-yellow-black bg-purple-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-950 duration-300 shadow-lg shadow-violet-200 hover:border-yellow-200 hover:text-white items-center text-center rounded-[50%] p-3 md:p-5 px-5 md:px-5"
       >
         <a class="flex flex-col" href=""
-          ><h1 class="text-2xl text-pink-600 hover:text-white">Candy's</h1>
-          <h1 class="w-[100px] md:w-full">Bling-n-Thingz</h1>
+          ><h1 class="text-2xl text-pink-600 italic hover:text-white">
+            Ca<span class="text-green-600">n</span>dy's
+          </h1>
+          <h1 class="w-[100px] md:w-full">
+            Bling-<span class="text-2xl text-green-600 shadow-yellow-300 italic"
+              >N</span
+            >-Thingz
+          </h1>
         </a>
       </div>
 
@@ -66,39 +72,43 @@
         ></ion-icon>
 
         <div
-          class="w-[100%] hidden cursor-pointer rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 nav-bar transition-all text-left absolute p-5 top-28 p10 right-0"
+          class="p-5 hidden cursor-pointer rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 nav-bar absolute items-center text-right top-28 right-0"
         >
           <li
             class="list-none text-black hover:text-yellow-200 py-[0.6rem] px-4 rounded-[14px] my-3"
           >
-            <a class="text-[18px] p-3" href="" aria-current="page"
-              ><ion-icon name="home-outline" class="text-white"></ion-icon></a
-            >Home
+            <a
+              class="text-[18px] flex gap-2 items-center"
+              href=""
+              aria-current="page"
+              ><ion-icon name="home-outline" class="text-white"></ion-icon
+              >Home</a
+            >
           </li>
           <li
             class="list-none text-black hover:text-yellow-200 py-[0.6rem] px-4 rounded-[14px] my-3"
           >
-            <a class="text-[18px] p-3" href=""
-              ><ion-icon name="call-outline" class="text-white"></ion-icon></a
-            >Contact
+            <a class="text-[18px] flex gap-2 items-center" href="">
+              <ion-icon name="call-outline" class="text-white"></ion-icon>
+              Contact</a
+            >
           </li>
           <li
             class="list-none text-black hover:text-yellow-200 py-[0.6rem] px-4 rounded-[14px] my-3"
           >
-            <a class="text-[18px] p-3" href=""
-              ><ion-icon name="cube-outline" class="text-white"></ion-icon></a
-            >Package
+            <a class="text-[18px] flex gap-2 items-center" href=""
+              ><ion-icon name="cube-outline" class="text-white"></ion-icon
+              >Package</a
+            >
           </li>
 
           <li
             class="list-none text-black hover:text-yellow-200 py-[0.6rem] px-4 rounded-[14px] my-3"
           >
-            <a class="text-[18px] p-3" href=""
-              ><ion-icon
-                name="bag-check-outline"
-                class="text-white"
-              ></ion-icon></a
-            >Order
+            <a class="text-[18px] flex gap-2 items-center" href=""
+              ><ion-icon name="bag-check-outline" class="text-white"></ion-icon
+              >Order</a
+            >
           </li>
         </div>
       </div>
@@ -110,12 +120,14 @@
     </div>
 
     <div class="py-10">
-      <h1 class="text-4xl text-center mt-10 text-white font-bold">
+      <h1
+        class="text-[20px] text-center mt-10 md:w-[100%] w-full md:text-5xl text-white font-bold"
+      >
         Shop Your Pair of Shoes
       </h1>
 
       <div
-        class="product-list py-3 w-[80%] mx-auto flex item-center flex-col md:flex-row"
+        class="product-list py-3 w-[100%] mx-auto flex item-center flex-col md:flex-row"
       ></div>
     </div>
 
