@@ -98,7 +98,7 @@ const displayProducts = ()=>{
       <h1 class="name text-2xl pb-3">${product.name}</h1>
       <div class="price-tag flex">
         <p class="price line-through pr-3">$${product.price}</p>
-        <p class="price">${product.mainPrice}</p>
+        <p class="price">$${product.mainPrice}</p>
       </div>
     </div>
     <button 
