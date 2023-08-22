@@ -16,7 +16,7 @@
   </head>
   <body>
     <div
-      class="py-3 flex justify-between px-4 items-center relative bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+      class="py-3 flex justify-between px-4 items-center fixed top-0 w-full z-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
     >
       <div
         class="brand text-[13px] md:relative md:flex text-yellow-black bg-purple-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-950 duration-300 shadow-lg shadow-violet-200 hover:border-yellow-200 hover:text-white items-center text-center rounded-[50%] p-3 md:p-5 px-5 md:px-5"
@@ -52,28 +52,36 @@
         <li
           class="list-none text-black hover:text-yellow-200 py-[0.6rem] px-4 rounded-[14px]"
         >
-          <a class="text-[18px] p-3" href=""
-            ><ion-icon
-              name="bag-check-outline"
-              class="text-white"
-            ></ion-icon></a
-          >Order
+          <a class="relative text-[18px] p-3" href="">
+            <ion-icon name="bag-check-outline" class="text-white"></ion-icon>
+            <small
+              class="bg-blue-600 cart-count p-[2px] rounded-lg absolute right-4 bottom-9 text-white"
+            ></small>
+
+            Order</a
+          >
         </li>
       </div>
 
       <!-- Mobile Navbar -->
+
       <div
-        class="nav block flex-col md:hidden gap-y-4 items-center w-full relative p-5 m-3"
+        class="nav flex-col md:hidden gap-y-4 items-center w-full fixed p-5 m-3"
       >
+        <div class="m-3 absolute right-[90px] bottom-4" href="">
+          <ion-icon name="bag-check-outline" class="text-white"></ion-icon>
+          <small
+            class="bg-blue-600 cart-count ml-5 p-[2px] rounded-lg text-white"
+          ></small>
+        </div>
         <ion-icon
           onclick="changeHere(event)"
-          class="flex text-4xl ml-[95%] cursor-pointer hover:bg-violet-900 hover:text-white"
-          class="hamburger"
+          class="flex text-4xl ml-[86%] cursor-pointer hover:bg-violet-900 hover:text-white"
           name="reorder-three-outline"
         ></ion-icon>
 
         <div
-          class="p-5 hidden cursor-pointer rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 nav-bar absolute items-center text-right top-28 right-0"
+          class="p-5 hidden cursor-pointer rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 nav-bar absolute items-center text-right top-28 right-10"
         >
           <li
             class="list-none text-black hover:text-yellow-200 py-[0.6rem] px-4 rounded-[14px] my-3"
@@ -115,8 +123,11 @@
       </div>
     </div>
     <div
-      class="container mt-20 md:w-[800px] w-[95%] h-[200px] md:h-[400px] mx-auto flex items-center flex-col rounded-md justify-center"
+      class="container mt-40 md:w-[800px] w-[95%] h-[200px] md:h-[400px] mx-auto flex items-center flex-col rounded-md justify-center"
     >
+      <div
+        class="w-content hidden fixed top-10 z-10 alert p-4 bg-white text-green-500 text-center rounded-md shadow-xl"
+      ></div>
       <!-- <img slide class="w-full h-full rounded-md" src="" alt="" /> -->
       <video width="3300" height="240" autoplay controls>
         <source src="assets/firstV.mp4" type="video/mp4" />

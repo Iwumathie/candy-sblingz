@@ -11,13 +11,11 @@ function changeHere(e){
   const myTarget = e.target
   if(myTarget.nextElementSibling.classList.contains("hidden")){
     navToggle.classList.remove('hidden')
-    slideShow.style.marginTop = "340px"
     navToggle.classList.add("")
 
   }
   else{
     navToggle.classList.add('hidden')
-    slideShow.style.marginTop =""
     navToggle.classList.add("nav")
   }
 }
@@ -80,6 +78,27 @@ const products =[
 
 let cart = []
 
+const alertBox = document.querySelector(".alert")
+
+function addToCart(productId){
+cart.push(products[productId])
+cartCount()
+
+  alertBox.classList.remove("hidden")
+  alertBox.innerHTML = products[productId] && `${products[productId].name} added`
+  setTimeout(() => {
+    alertBox.style.display = "none"
+    
+  }, 3000);
+    alertBox.style.display = ""
+
+}
+
+function cartCount(){
+  const countEl = document.querySelector(".cart-count")
+  countEl.innerHTML = cart.length
+}
+
 const displayProducts = ()=>{
   const productContainer = document.querySelector(".product-list")
   
@@ -88,6 +107,7 @@ const displayProducts = ()=>{
 
   
   products.map((product, index)=>{
+
     const productDiv = document.createElement("div")
     productDiv.className = "md:grid,w-full,flex flex-col, md:grid-cols-3,md:gap-10 m-4"
     console.log(index);
@@ -101,7 +121,7 @@ const displayProducts = ()=>{
         <p class="price">$${product.mainPrice}</p>
       </div>
     </div>
-    <button 
+    <button onclick="addToCart(${index})" 
       class="py-2 px-4 bg-blue-600 outline-none w-full rounded-lg pointer text-white"
     >
       Buy now
@@ -114,8 +134,7 @@ const displayProducts = ()=>{
 }
 
 displayProducts()
-
-
+cartCount()
 
 
 
