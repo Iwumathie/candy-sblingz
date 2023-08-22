@@ -584,12 +584,20 @@ video {
   bottom: 2.25rem;
 }
 
-.right-0 {
-  right: 0px;
+.right-10 {
+  right: 2.5rem;
 }
 
 .right-4 {
   right: 1rem;
+}
+
+.right-\[120px\] {
+  right: 120px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .top-10 {
@@ -600,36 +608,48 @@ video {
   top: 7rem;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.right-20 {
-  right: 5rem;
-}
-
-.right-16 {
-  right: 4rem;
-}
-
-.right-11 {
-  right: 2.75rem;
-}
-
-.right-\[20px\] {
-  right: 20px;
-}
-
-.right-\[30px\] {
-  right: 30px;
+.right-\[70px\] {
+  right: 70px;
 }
 
 .right-\[50px\] {
   right: 50px;
+}
+
+.right-\[60px\] {
+  right: 60px;
+}
+
+.top-9 {
+  top: 2.25rem;
+}
+
+.left-\[70px\] {
+  left: 70px;
+}
+
+.left-\[0px\] {
+  left: 0px;
+}
+
+.left-\[100px\] {
+  left: 100px;
+}
+
+.left-\[200px\] {
+  left: 200px;
+}
+
+.right-\[200px\] {
+  right: 200px;
+}
+
+.right-\[100px\] {
+  right: 100px;
+}
+
+.right-\[90px\] {
+  right: 90px;
 }
 
 .right-\[80px\] {
@@ -638,14 +658,6 @@ video {
 
 .bottom-4 {
   bottom: 1rem;
-}
-
-.right-\[90px\] {
-  right: 90px;
-}
-
-.right-\[100px\] {
-  right: 100px;
 }
 
 .z-10 {
@@ -660,6 +672,10 @@ video {
   margin: 1rem;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -670,40 +686,20 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.ml-\[95\%\] {
-  margin-left: 95%;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-40 {
-  margin-top: 10rem;
-}
-
-.ml-\[80\%\] {
-  margin-left: 80%;
-}
-
-.ml-\[90\%\] {
-  margin-left: 90%;
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .ml-\[86\%\] {
   margin-left: 86%;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
-.block {
-  display: block;
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .flex {
@@ -744,16 +740,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.w-\[fit-content\] {
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .cursor-pointer {
@@ -1074,16 +1060,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:fixed {
-    position: fixed;
-  }
-
   .md\:relative {
     position: relative;
-  }
-
-  .md\:sticky {
-    position: sticky;
   }
 
   .md\:flex {
