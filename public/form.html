@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create account page</title>
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body>
+    <!-- Heading Secton -->
+    <div class="main_container">
+      <div class="heading">
+        <div class="hoMe">
+          <a class="home" href="home_page.html" target="_blank"
+            >&#8592; Home page</a
+          >
+        </div>
+        <h1 class="createAccount">Create account</h1>
+      </div>
+      <div class="instruction">
+        <p>Correctly fill your data below</p>
+      </div>
+
+      <form>
+        <!-- Name Section -->
+        <div class="names">
+          <div>
+            <div class="firstname">
+              <label for="first_name">First Name <span>*</span> </label>
+              <input type="text" placeholder="First name" />
+            </div>
+            <div class="middlename">
+              <label for="middle_name">Middle Name</label>
+              <input type="text" placeholder="Middle name" />
+            </div>
+            <div class="lastname">
+              <label for="last_name">Last Name <span>*</span></label>
+              <input type="text" placeholder="Last name" />
+            </div>
+          </div>
+        </div>
+        <!-- The input section -->
+        <div class="fills">
+          <div class="email">
+            <label for="email">Email <span>*</span></label>
+            <input class="email" type="email" placeholder="example@gmail.com" />
+          </div>
+          <div class="phone">
+            <label for="phone">Phone number <span>*</span></label>
+            <input
+              class="number"
+              type="number"
+              placeholder="example +2348168131769"
+            />
+          </div>
+          <div class="gender">
+            <label for="gender">Gender <span>*</span></label>
+            <select>
+              <div class="option">
+                <option>Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Rather not say</option>
+              </div>
+            </select>
+          </div>
+          <div class="nationality">
+            <label for="country">Nationality <span>*</span></label>
+            <div class="select">
+              <select>
+                <option>Select</option>
+                <option>Nigerian</option>
+                <option>Non Nigerian</option>
+              </select>
+            </div>
+          </div>
+          <!-- The checkbox section -->
+          <div class="agReement">
+            <div class="checkBox">
+              <input class="checkbox" type="checkbox" />
+            </div>
+            <div class="terms">
+              <a class="agreement_text"
+                >Check the box to agree to our terms and conditions</a
+              >
+            </div>
+          </div>
+          <!-- The Submit and log in section -->
+          <div class="agreementSubmitLogin">
+            <div class="sign_up">
+              <a class="signup" href="submitted.html" target="_blank">
+                Sign up
+              </a>
+            </div>
+            <div class="log_in">
+              <a href="log_in.html" class="back_toLogin" target="_blank"
+                >Log in</a
+              >
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="designer">
+        <div class="company_name">
+          <a href="sheriph001@gmail.com" class="don_lex"
+            >Designed by: Don_lex Info Tech Specialist
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
