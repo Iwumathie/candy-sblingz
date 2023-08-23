@@ -19,7 +19,7 @@
       class="py-3 flex justify-between px-4 items-center fixed top-0 w-full z-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
     >
       <div
-        class="brand text-[13px] md:relative md:flex text-yellow-black bg-purple-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-950 duration-300 shadow-lg shadow-violet-200 hover:border-yellow-200 hover:text-white items-center text-center rounded-[50%] p-3 md:p-5 px-5 md:px-5"
+        class="brand text-[13px] md:relative md:flex text-yellow-black bg-purple-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-950 duration-300 shadow-lg shadow-black hover:border-yellow-200 hover:text-white items-center text-center rounded-[50%] p-3 md:p-5 px-5 md:px-5"
       >
         <a class="flex flex-col" href=""
           ><h1 class="text-2xl text-pink-600 italic hover:text-white">
@@ -38,16 +38,17 @@
         <li
           class="list-none text-black hover:text-yellow-200 py-[0.6rem] px-4 rounded-[14px]"
         >
-          <a class="text-[18px] p-3" href=""
-            ><ion-icon name="home-outline" class="text-white"></ion-icon></a
-          >Home
+          <a class="flex gap-2 items-center text-[18px] p-1" href=""
+            ><ion-icon name="home-outline" class="text-white"></ion-icon>Home</a
+          >
         </li>
         <li
           class="list-none text-black hover:text-yellow-200 py-[0.6rem] px-4 rounded-[14px]"
         >
-          <a class="text-[18px] p-3" href=""
-            ><ion-icon name="call-outline" class="text-white"></ion-icon></a
-          >Contact
+          <a class="flex gap-2 items-center text-[18px] p-1" href=""
+            ><ion-icon name="call-outline" class="text-white"></ion-icon
+            >Contact</a
+          >
         </li>
         <li
           class="list-none text-black hover:text-yellow-200 py-[0.6rem] px-4 rounded-[14px]"
@@ -68,10 +69,10 @@
       <div
         class="nav flex-col md:hidden gap-y-4 items-center w-full fixed p-5 m-3"
       >
-        <div class="m-3 absolute right-[90px] bottom-4" href="">
+        <div class="m-2 absolute right-[70px] bottom-4" href="">
           <ion-icon name="bag-check-outline" class="text-white"></ion-icon>
           <small
-            class="bg-blue-600 cart-count ml-5 p-[2px] rounded-lg text-white"
+            class="bg-blue-600 cart-count ml-2 p-[1px] rounded-lg text-white"
           ></small>
         </div>
         <ion-icon
@@ -126,7 +127,7 @@
       class="container mt-40 md:w-[800px] w-[95%] h-[200px] md:h-[400px] mx-auto flex items-center flex-col rounded-md justify-center"
     >
       <div
-        class="w-content hidden fixed top-10 z-10 alert p-4 bg-white text-green-500 text-center rounded-md shadow-xl"
+        class="w-content hidden fixed top-25 md:top-10 z-10 alert p-4 bg-white text-green-500 text-center rounded-md shadow-xl"
       ></div>
       <!-- <img slide class="w-full h-full rounded-md" src="" alt="" /> -->
       <video width="3300" height="240" autoplay controls>
@@ -136,9 +137,11 @@
     </div>
 
     <div class="py-10">
-      <div class="details bg-yellow-400 w-[100%] items-center p-3">
+      <div
+        class="details bg-yellow-400 my-10 md:w-full w-[100%] items-center p-3"
+      >
         <h1
-          class="text-[20px] text-center bg-white mt-10 md:w-[100%] w-full md:text-5xl font-bold"
+          class="text-[20px] text-center mt-10 md:w-[100%] w-full md:text-5xl font-bold"
         >
           Exclussive Products For the week
         </h1>
