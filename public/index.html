@@ -67,14 +67,17 @@
       <!-- Mobile Navbar -->
 
       <div
-        class="nav flex-col md:hidden gap-y-4 items-center w-full fixed p-5 m-3"
+        class="nav flex-col md:hidden gap-y- items-center w-full fixed p-5 m-3"
       >
-        <div class="m-2 absolute right-[70px] bottom-4" href="">
+        <a
+          class="m-2 absolute right-[70px] md:right-[90px] bottom-4"
+          href="/cart"
+        >
           <ion-icon name="bag-check-outline" class="text-white"></ion-icon>
           <small
-            class="bg-blue-600 cart-count ml-2 p-[1px] rounded-lg text-white"
+            class="bg-blue-600 cart-count2 ml-2 p-[1px] rounded-lg text-white"
           ></small>
-        </div>
+        </a>
         <ion-icon
           onclick="changeHere(event)"
           class="flex text-4xl ml-[86%] cursor-pointer hover:bg-violet-900 hover:text-white"
@@ -82,7 +85,7 @@
         ></ion-icon>
 
         <div
-          class="p-5 hidden cursor-pointer rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 nav-bar absolute items-center text-right top-28 right-10"
+          class="p-5 hidden cursor-pointer rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 nav-bar absolute items-center text-right top-[98px] right-7"
         >
           <li
             class="list-none text-black hover:text-yellow-200 py-[0.6rem] px-4 rounded-[14px] my-3"

@@ -96,6 +96,8 @@ cartCount()
 
 function cartCount(){
   const countEl = document.querySelector(".cart-count")
+  const countEl2 = document.querySelector(".cart-count2")
+countEl2.textContent = cart.length
   countEl.innerHTML = cart.length
 }
 
@@ -121,6 +123,7 @@ const displayProducts = ()=>{
         <p class="price">$${product.mainPrice}</p>
       </div>
     </div>
+    <a href="itemDetails.html" onclick="showDetails(${index})">see details</a>
     <button onclick="addToCart(${index})" 
       class="py-2 px-4 bg-blue-600 outline-none w-full rounded-lg pointer text-white"
     >
@@ -132,6 +135,22 @@ const displayProducts = ()=>{
   })
 
 }
+
+const showDetails = (itemId)=>{{
+  const product = products[itemId]
+  const itemContainer = document.querySelector(".item-container")
+ 
+  console.log(product);
+  const detailsBox = document.createElement("div")
+
+  product.map(item=>(
+    detailsBox.innerHTML = `
+    <img class="w-10 h-11 d-img" src={${item.image}} alt="" />
+    <h1 class="name text-lg font-bold d-text">{${item.name}}</h1> 
+    `
+  ))
+  itemContainer.appendChild(detailsBox)
+}}
 
 displayProducts()
 cartCount()
